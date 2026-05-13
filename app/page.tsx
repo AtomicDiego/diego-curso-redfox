@@ -4,7 +4,7 @@ export default function Home() {
       {/* Header */}
       <header className="bg-rose-200 py-10 text-center">
         <h1 className="text-5xl font-bold text-rose-700">La Paloma</h1>
-        <p className="mt-2 text-rose-500 text-lg">Cocina mexicana tradicional</p>
+        <p className="mt-2 text-rose-500 text-lg">Cocina estadounidense clásica</p>
       </header>
 
       {/* Nav */}
@@ -21,10 +21,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-rose-600 mb-6">Entradas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { name: "Guacamole", desc: "Aguacate fresco, cilantro, jitomate y limón", price: "Q45" },
-              { name: "Esquites", desc: "Elote en vaso con crema, queso y chile", price: "Q35" },
-              { name: "Quesadillas", desc: "Tortilla de maíz con queso Oaxaca y epazote", price: "Q50" },
-              { name: "Tostadas de tinga", desc: "Pollo desmenuzado en salsa de chipotle", price: "Q55" },
+              { name: "Buffalo Wings", desc: "Alitas crujientes bañadas en salsa picante y aderezo ranch", price: "Q55" },
+              { name: "Mozzarella Sticks", desc: "Palitos de queso empanizados con salsa marinara", price: "Q45" },
+              { name: "Loaded Nachos", desc: "Nachos con queso cheddar, jalapeños, frijoles y crema agria", price: "Q60" },
+              { name: "Mac & Cheese Bites", desc: "Bocados de macarrones con queso fritos y crujientes", price: "Q50" },
             ].map((item) => (
               <div key={item.name} className="bg-pink-100 rounded-2xl p-5">
                 <div className="flex justify-between items-center mb-1">
@@ -42,10 +42,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-rose-600 mb-6">Platos fuertes</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { name: "Tacos al pastor", desc: "Cerdo marinado en achiote con piña y cilantro", price: "Q75" },
-              { name: "Enchiladas verdes", desc: "Pollo bañado en salsa verde con crema y queso", price: "Q80" },
-              { name: "Chile en nogada", desc: "Poblano relleno con picadillo y salsa de nuez", price: "Q95" },
-              { name: "Mole negro", desc: "Pollo en mole tradicional con arroz y frijoles", price: "Q90" },
+              { name: "Cheeseburger", desc: "Hamburguesa de res con queso cheddar, tocino y papas fritas", price: "Q85" },
+              { name: "BBQ Ribs", desc: "Costillas de cerdo glaseadas en salsa barbacoa con coleslaw", price: "Q120" },
+              { name: "Southern Fried Chicken", desc: "Pollo frito estilo sureño con waffles y miel de maple", price: "Q95" },
+              { name: "Philly Cheesesteak", desc: "Sándwich de res, cebolla caramelizada y queso provolone", price: "Q90" },
             ].map((item) => (
               <div key={item.name} className="bg-orange-100 rounded-2xl p-5">
                 <div className="flex justify-between items-center mb-1">
@@ -63,8 +63,8 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-rose-600 mb-6">Postres</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { name: "Churros", desc: "Con chocolate caliente para dippear", price: "Q40" },
-              { name: "Tres leches", desc: "Bizcocho empapado en tres tipos de leche", price: "Q45" },
+              { name: "Apple Pie", desc: "Tarta de manzana con canela y bola de helado de vainilla", price: "Q45" },
+              { name: "NY Cheesecake", desc: "Pay de queso estilo Nueva York con coulis de frutos rojos", price: "Q55" },
             ].map((item) => (
               <div key={item.name} className="bg-yellow-100 rounded-2xl p-5">
                 <div className="flex justify-between items-center mb-1">
@@ -82,9 +82,9 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-rose-600 mb-6">Bebidas</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {[
-              { name: "Agua de jamaica", desc: "Flor de Jamaica con azúcar y hielo", price: "Q25" },
-              { name: "Horchata", desc: "Arroz con canela y leche", price: "Q25" },
-              { name: "Tamarindo", desc: "Agua fresca de tamarindo natural", price: "Q25" },
+              { name: "Root Beer", desc: "Refresco clásico de raíz servido bien frío", price: "Q25" },
+              { name: "Lemonade", desc: "Limonada casera con menta fresca y hielo", price: "Q25" },
+              { name: "Iced Tea", desc: "Té helado estilo sureño endulzado con limón", price: "Q25" },
             ].map((item) => (
               <div key={item.name} className="bg-purple-100 rounded-2xl p-5">
                 <div className="flex justify-between items-center mb-1">
